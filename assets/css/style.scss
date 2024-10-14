@@ -1,0 +1,281 @@
+/* Importando as fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: #faf8f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*height: 100vh;*/
+    background-image: url('../img/bg_desktop.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: 1;
+}
+
+.invitation-container {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    padding: 60px 20px 60px 20px;
+    border: solid 1px #dbdfcc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    text-align: center;
+    background-image: url('/assets/img/white-paper.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+/* Seal */
+.seal-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Seal img */
+.seal-image {
+    width: 80px;
+    height: auto;
+}
+
+/* Quote */
+.quote-section {
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    color: #555555;
+    margin: 50px 0 20px 0;
+    font-style: italic;
+}
+
+.names-section h1 {
+    font-family: 'Parisienne', cursive;
+    font-weight: 200;
+    font-size: 60px;
+    color: #4a774a;
+    margin-bottom: 10px;
+    margin: 60px 0px 60px 0px;
+}
+
+.invitation-text p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    color: #333333;
+    margin-bottom: 30px;
+}
+
+.cta-text {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.cta-text p {
+    font-size: 15px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+}
+
+/* Date */
+.date,
+.day,
+.time {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 20px 0px 20px;
+}
+
+.date-time-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 0 60px 0;
+    box-sizing: border-box;
+}
+
+.date h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    font-family: 'Playfair Display', serif;
+    color: #4a774a;
+    line-height: 70px;
+    transform: translateY(-10px);
+}
+
+.date p,
+.day p,
+.time p {
+    font-size: 18px;
+    color: #333333;
+    text-transform: uppercase;
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    font-family: 'Lora', serif;
+}
+
+
+.divider {
+    width: 2px;
+    height: 80px;
+    background-color: #4a774a;
+}
+
+
+.icon-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 30px;
+}
+
+
+.icon-wrapper {
+    text-align: center;
+    margin: 0 15px;
+}
+
+
+.icon-circle {
+    background-color: #8e9e7f;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+.icon-link {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.icon-image {
+    width: 60px;
+    height: 60px;
+}
+
+
+.icon-wrapper p {
+    font-weight: bold;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #000;
+}
+
+
+.location-section {
+    margin-bottom: 60px;
+}
+
+.location-section p {
+    font-size: 16px;
+    color: #555555;
+    margin-bottom: 5px;
+}
+
+
+@media screen and (max-width: 768px) {
+    body {
+        height: auto;
+        background-attachment: scroll;
+        background-image: url('../img/bg_mobile.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .invitation-container {
+        padding: 15px;
+        margin: 50px 20px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .quote-section {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+    .names-section h1 {
+        font-size: 70px;
+    }
+
+    .date-section {
+        padding: 15px;
+    }
+
+    .day {
+        font-size: 18px;
+    }
+
+    .date {
+        font-size: 40px;
+    }
+
+    .month-year,
+    .time {
+        font-size: 16px;
+    }
+
+    .icon-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .icon-wrapper {
+        width: 40%;
+        margin: 10px;
+    }
+
+    .icon-circle {
+        width: 70px;
+        height: 70px;
+    }
+
+    .icon-image {
+        width: 50px;
+        height: 50px;
+    }
+
+    .icon-wrapper p {
+        font-weight: bold;
+        margin-top: 5px;
+        font-size: 12px;
+        color: #000;
+    }
+
+
+}
